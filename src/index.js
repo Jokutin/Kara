@@ -29,7 +29,7 @@ client.on('messageCreate', (message) => {
         return;
     }
     // Check if the message contains both keywords
-    if (message.content.toLowerCase().includes(keywordAskIP1) && message.content.toLowerCase().includes(keywordAskIP2)) {
+    if (message.content.toLowerCase().includes(keywordAskIP1) && message.content.toLowerCase(keywordAskIP2)) {
     // Send the response message
     message.reply(responseAskIP);
     }
@@ -90,7 +90,7 @@ client.on('messageCreate', (message) => {
     if(message.author.bot) {
         return;
     }
-    // Check if the message contains keywordAskUnban1 or keywordAskUnban2
+    // Check if the message contains keywords
     if (message.content.toLowerCase().includes(keywordAskClaim1) && (message.content.toLowerCase().includes(keywordAskClaim2) || message.content.toLowerCase().includes(keywordAskClaim3))) {
     // Send the response message
     message.reply(responseAskClaim);
@@ -117,7 +117,7 @@ client.on('messageCreate', (message) => {
     if(message.author.bot) {
         return;
     }
-    // Check if the message contains keywordAskUnban1 or keywordAskUnban2
+    // Check if the message contains keywords
     if (message.content.toLowerCase().includes(keywordAskHowToPlay1) || message.content.toLowerCase().includes(keywordAskHowToPlay4) && (message.content.toLowerCase().includes(keywordAskHowToPlay22) || message.content.toLowerCase().includes(keywordaskhowtoplay23) || message.content.toLowerCase().includes(keywordAskHowToPlay2) || message.content.toLowerCase().includes(keywordAskHowToPlay3) || message.content.toLowerCase().includes(keywordAskHowToPlay21) || message.content.toLowerCase().includes(keywordAskHowToPlay31))) {
     // Send the response message
     message.reply(responseAskHowToPlay);
@@ -139,7 +139,7 @@ client.on('messageCreate', (message) => {
     if(message.author.bot) {
         return;
     }
-    // Check if the message contains keywordAskUnban1 or keywordAskUnban2
+    // Check if the message contains keywords
     if (message.content.toLowerCase().includes(keywordAskBdwand1) && (message.content.toLowerCase().includes(keywordAskBdwand2) || message.content.toLowerCase().includes(keywordAskBdwand3))) {
     // Send the response message
     message.reply(responseAskBdwand);
@@ -181,7 +181,7 @@ client.on('messageCreate', (message) => {
     if(message.author.bot) {
         return;
     }
-    // Check if the message contains keywordAskUnban1 or keywordAskUnban2
+    // Check if the message contains keywords
     if (message.content.toLowerCase().includes(keywordAskMSG1) && (message.content.toLowerCase().includes(keywordAskMSG2) || message.content.toLowerCase().includes(keywordAskMSG3))) {
     // Send the response message
     message.reply(responseAskMSG);
@@ -203,7 +203,7 @@ client.on('messageCreate', (message) => {
     if(message.author.bot) {
         return;
     }
-    // Check if the message contains keywordAskUnban1 or keywordAskUnban2
+    // Check if the message contains keywords
     if (message.content.toLowerCase().includes(keywordAskMapres1) && (message.content.toLowerCase().includes(keywordAskMapres2) || message.content.toLowerCase().includes(keywordAskMapres3))) {
     // Send the response message
     message.reply(responseAskMapres);
@@ -217,7 +217,7 @@ client.on('messageCreate', (message) => {
     if(message.author.bot) {
         return;
     }
-    // Check if the message contains keywordAskUnban1 or keywordAskUnban2
+    // Check message
     if (message.content.toLowerCase() === ('kiitti kara')) {
     // Send the response message
     message.reply('Ole hyvä');
@@ -231,7 +231,7 @@ client.on('messageCreate', (message) => {
     if(message.author.bot) {
         return;
     }
-    // Check if the message contains keywordAskUnban1 or keywordAskUnban2
+    // Check message
     if (message.content.toLowerCase() === ('mikä on elämän tarkoitus')) {
     // Send the response message
     message.reply('42');
